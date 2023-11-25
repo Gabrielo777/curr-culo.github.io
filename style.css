@@ -1,0 +1,111 @@
+
+body {
+    font-family: 'Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #555353;
+    color: #ffffff; 
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    margin: 5px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #ddd; /* Cor dos cabeçalhos mais clara */
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.trabalho {
+    color: #ffffff; /* Cor do link laranja para destaque */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.icon-me {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+ 
+}
+
+.icon-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block; /* Alterado para inline-block */
+    margin: 0 10px; /* Adiciona uma margem entre os ícones */
+}
+
+  /* Adicione o estilo específico do slide */
+  #about {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    width: 300%; /* 100% * número de slides */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+#slide1:checked ~ .slide-container {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slide-container {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slide-container {
+    transform: translateX(-200%);
+}
+
+/* Adicione estilo para os botões de navegação do slide */
+.slide-btn {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+.work{
+    width: 20px;
+    height: 20px;
+}
